@@ -1,0 +1,280 @@
+/* Markuss Saule Analytics Portfolio Homepage */
+
+:root {
+  --primary-navy: #0B1A33;
+  --steel-blue: #1F4E79;
+  --warm-clay: #B56F50;
+  --soft-paper: #F4EFE7;
+  --white: #FFFFFF;
+  --graphite: #2B2B2B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--soft-paper);
+  color: var(--graphite);
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--steel-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.1;
+}
+
+.site-nav {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.site-logo {
+  width: 92px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.nav-links a {
+  color: var(--primary-navy);
+  padding: 0.25rem 0;
+}
+
+.nav-links .active {
+  color: var(--warm-clay);
+  border-bottom: 3px solid var(--warm-clay);
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem 0 2rem;
+}
+
+.hero-copy,
+.hero-image {
+  background: var(--white);
+  border: 2px solid rgba(11, 26, 51, 0.12);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(11, 26, 51, 0.08);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--steel-blue);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
+}
+
+.hero p {
+  font-size: 1.15rem;
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 0.9rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.primary-button {
+  background: var(--warm-clay);
+  color: var(--white);
+}
+
+.secondary-button {
+  color: var(--primary-navy);
+  border: 2px solid var(--primary-navy);
+}
+
+.focus-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background: var(--primary-navy);
+  padding: 1rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+}
+
+.focus-bar article {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 5px solid var(--warm-clay);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.focus-bar h2 {
+  color: var(--white);
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.focus-bar p {
+  color: var(--soft-paper);
+  margin: 0;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 3rem 0 1.25rem;
+}
+
+.section-heading h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.project-card {
+  background: var(--white);
+  border: 2px solid rgba(11, 26, 51, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(11, 26, 51, 0.08);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: var(--soft-paper);
+}
+
+.card-content {
+  padding: 1.25rem;
+}
+
+.card-content h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.45rem;
+}
+
+.tags {
+  color: var(--steel-blue);
+  font-weight: 800;
+  font-size: 0.93rem;
+}
+
+.about-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+.about-preview,
+.next-steps {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 1.6rem;
+  border: 2px solid rgba(11, 26, 51, 0.12);
+}
+
+.about-preview a,
+.quick-links a {
+  font-weight: 800;
+}
+
+.quick-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer {
+  background: var(--primary-navy);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-logo {
+  width: 70px;
+  margin: 0 auto 0.75rem;
+  background: var(--white);
+  border-radius: 8px;
+}
+
+footer a {
+  color: var(--soft-paper);
+}
+
+@media screen and (max-width: 850px) {
+  .site-nav,
+  .hero,
+  .about-cta {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links,
+  .button-row,
+  .quick-links {
+    justify-content: center;
+  }
+
+  .focus-bar,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
