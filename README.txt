@@ -1,15 +1,9 @@
-Saule Homepage Code
+MARKUSS SAULE ANALYTICS PORTFOLIO
 
-Files:
-- index.html
-- styles.css
-- images folder
+Open index.html to view the website.
+Pages:
+- index.html (Home)
+- projects.html (Projects)
+- resume-skills.html (Resume / Skills and Contact)
 
-This is the homepage for Markuss Saule's Analytics Portfolio.
-It follows the site plan: header, hero section, focus bar, featured projects,
-about preview, call-to-action area, and footer.
-
-To use:
-1. Put index.html, styles.css, and the images folder in the same project folder.
-2. Open index.html in your browser.
-3. Add projects.html and resume-skills.html later so the nav links work.
+Before publishing, replace the placeholder GitHub and LinkedIn links, the example email address, and the resume-preview image download with the final resume PDF.
